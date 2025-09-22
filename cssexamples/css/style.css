@@ -6,11 +6,12 @@ body {
   line-height: 1.6;
 }
 
-/* Banner */
-#banner {
+/* Top banner */
+#top-banner {
   text-align: center;
   background-color: lightblue;
-  padding: 15px;
+  padding: 20px;
+  border-bottom: 2px solid #111;
 }
 
 #tagline {
@@ -18,16 +19,16 @@ body {
   font-style: italic;
 }
 
-/* Nav (basic links with dividers) */
+/* Nav */
 nav {
   text-align: center;
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 nav a {
   color: blue;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 0 6px;
 }
 
 nav a:hover {
