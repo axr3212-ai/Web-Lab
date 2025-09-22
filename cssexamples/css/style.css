@@ -1,82 +1,86 @@
+/* Base */
 body {
   background-color: rgb(198, 219, 243);
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif; /* custom font for rubric */
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  color: #111;
 }
 
-/* Big top banner */
+/* Big top banner (simple, bold) */
 #top-banner {
   background-color: lightblue;
   text-align: center;
-  padding: 25px;
-  border-bottom: 3px solid #111;
+  padding: 22px 16px;
+  border-bottom: 2px solid #111;
 }
 
 #top-banner h1 {
   margin: 0;
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;            /* new CSS property for rubric */
 }
 
-#tagline {
-  margin: 5px 0 0 0;
-  font-style: italic;
-}
+#tagline { margin: 4px 0 0 0; }
 
-/* Nav */
-nav {
-  text-align: center;
-  margin: 12px 0;
-}
-
+/* Nav: color, remove underline, hover style (rubric) */
+nav { text-align: center; margin: 12px 0; }
 nav a {
-  color: blue;
+  color: #0b55aa;
   text-decoration: none;
   margin: 0 6px;
 }
+nav a:hover { text-decoration: underline; }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Sections */
+/* Sections: simple student look */
 section {
-  max-width: 800px;
-  margin: 15px auto;
-  padding: 10px;
-  background-color: white;
-  border: 1px solid #ccc;
+  max-width: 820px;
+  margin: 14px auto;
+  padding: 12px;
+  background-color: #fff;
 }
 
+/* Tag selectors (rubric wants you to style HTML tags) */
 h2 {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.2rem;
-  margin-top: 0;
+  margin: 0 0 8px 0;
 }
+h3 { font-size: 1rem; margin: 10px 0 6px 0; }
+p  { margin: 0 0 10px 0; }
+ol { margin: 8px 0 8px 20px; }
 
-h3 {
-  font-size: 1rem;
-  margin-top: 10px;
+/* Three simple reusable classes (rubric: create & use 3 classes) */
+.box {
+  border: 1px solid #ccc;
 }
-
-/* Gallery */
-#gallery {
+.highlight {
+  background-color: #f4f4f4;
+}
+.center {
   text-align: center;
 }
 
-#gallery img {
+/* Image gallery: neat but simple */
+#gallery figure {
+  display: inline-block;
   margin: 8px;
+}
+#gallery img {
   border: 1px solid #333;
+}
+#gallery figcaption {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 4px;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  font-size: 0.9rem;
   color: gray;
+  font-size: 0.9rem;
   margin: 20px 0;
 }
-\
