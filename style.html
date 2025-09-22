@@ -3,60 +3,106 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Alexa Ramirez">
-        <meta name="description" content="informational webpage about the television series One Tree Hill and its cultural impact."> 
+        <meta name="description" content="Informational webpage about the television series One Tree Hill and its cultural impact."> 
         <meta name="keywords" content="One Tree Hill, Teen Drama, Lucas Scott, Nathan Scott, Brooke Davis, Peyton Sawyer, Hayley James Scott, CW Network">
         <title>All ABout One Tree Hill Cultural Impact</title>
+        <!--Custom Font-->
+            <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <!--External CSS -->
+        <link href="stylesheet" href="css/style.css"x<link rel="stylesheet" href="css/style.css"
         <style>
             body{
                 background-color: rgb(209, 233, 247);
+                font-family: Arial, sans-serif
+                margin: 0;
+                padding: 0;
+            }
+            nav a {
+                color: white;
+                text-decoration: none; 
+                margin: 15px;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            nav a:hover {
+                color: pink;
+                text-decoration: underline;
+            }
+            h1{
+                font-family: "Lobster", cursive
+                text-align: center;
+                color: darkblue;
+            }
+            h2 {
+                font-family:cursive; 
+                text-transform: capitalize;
+                color: darkslateblue;
+            }
+            p{
+                font-size: 16px;
+                line-height: 1.6;
+                margin: 10px 20px;
+            }
+            ul {
+                list-style: square;
+            }
+            ul li {
+                color: blue;
+                text-decoration: underline;
+            }
+            .highlight {
+                background-color: yellow;
+                font-weight: bold;
+                padding: 3px;
+            }
+            .box {
+                border: 2px solid navy;
+                padding: 10px
+                margin: 20px;
+                bordr-radius: 8px;
+                background-color: white;
+            }
+            .center {
+                text-align: center;
+            }
+            figure{
+                display:inline-block;
+                margin: 15px;
+                text-align: center;
+            }
+            figure img {
+                border-radius:10px:
+                box-shadow: 2px 2px 8px gray;
+                transition: transform 0.3s;
+            }
+            figure img:hover {
+                transform: scale(1.05);
             }
         </style>
-        <link rel="stylesheet" href="css/style.css"
     </head>
-     body {
-            background-color: rgb(209, 233, 247);
-        }
-        h1 {
-            font-family: sans-serif;
-            text-align: center;
-        }
-        h2 {
-            font-family: cursive;
-            text-transform: capitalize;
-        }
-        ul {
-            list-style: square;
-        }
-        ul li {
-            color: blue;
-        }
-        li {
-            text-decoration: underline;
-        }
-        a {
-            text-decoration: none;
-        }
-        a:hover {
-            color: pink;
-        }
-    </style>
-</head>
-</html>
 <body>
-    <header>
+    <nav>
+        <a href="#story">Story</a>
+        <a href="#characters">Characters</a>
+        <a href="#impact">Impact</a>
+        <a href="#funfacts">Fun Facts</a>
+        <a href="#legacy">Legacy</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+    <header id="story">
         <h1>The Story of One Tree Hill</h1>
         <p>One Tree Hill is an American teen drama television series that aired from 2003 to 2012. It follows the lives of half-brothers Nathan Scott and Lucas Scott, along with their friends, as they navigate love, family rivalry, heartbreak, basketball, and adulthood in the fictional town of Tree Hill, North Carolina.
         </p>
     </header>
-    <section>
+    <section id="start" class="box">
         <h2>The Start of One Tree Hill</h2>
         <p> The series premiered on the WB in 2003, later transitioning to The CW. It quickly gained popularity for its dramatic storylines, relatable characters, and portrayal of small-town life. Over nine seasons and 187 episodes, One Tree Hill became one of the defining teen dramas of the 2000s, leaving a lasting mark on the genre.</p>
     </section>
-    <section>
+    <section id="characters">
         <h2>Main Characters</h2>
         <p>At its core, the show centers on the rivalry between half-brothers Nathan and Lucas Scott, which plays out both on the basketball court and in their personal lives. Their stories become intertwined with those of Peyton Sawyer, Brooke Davis, and Haley James Scott. Each character faces struggles with love, self-identity, and ambition, making the show deeply relatable and emotionally engaging.The cast's podcast <q>Drama Queens</q> continues to explore these themes today.</p>
     </section>
-    <section>
+    <section id="impact" class="box">
         <h2>Cultural Impact</h2>
         <p>
             <strong>One Tree Hill </strong> was more than a drama—it was a cultural touchstone of the 2000s. The series reflected the decade’s fashion and music while also addressing important themes such as mental health, grief, and trauma. By blending relatable characters with universal issues, the show inspired meaningful conversations and offered guidance to a generation of teens navigating adolescence.</p>
@@ -68,7 +114,7 @@
             <li>Encouraged conversations around adolescence, morality, and identity.</li>
         </ul>
     </section>
-    <section>
+    <section id="funfacts">
         <h2>Fun Facts</h2>
         <ol start="1">
             <li>Featured Gavin DeGraw’s “I Don’t Want to Be” as the theme song.<em>"I Don't Want to Be"</em></li><a href="https://www.youtube.com/watch?v=8gFCW3PHBws" target="_blank"> official theme song</a></li>
@@ -81,20 +127,20 @@
                 <a href="https://en.wikipedia.org/wiki/One_Tree_Hill_(TV_series)" target="_blank">Wikepedia Entry</a>
             </p>
         </ol>
-        <h3>Notable Highlights</h3>
+        <h3 class="center">Notable Highlights</h3>
         <ul>
             <li><strong>Strong </strong>cult fan base that continues through streaming platforms.</li>
             <li>Popularized teen drama tropes like love triangles and found families.</li>
             <li>Music from the show boosted careers of Gavin DeGraw, Jimmy Eat World, and Dashboard Confessional.</li>
     </ul>
         </section>
-    <section>
+    <section id="legacy" class="highlight">
         <h2>Legacy and Modern Relevance</h2>
         <p>Years after its finale, One Tree Hill remains relevant through streaming platforms and fan communities. The cast’s podcast, Drama Queens, keeps the stories alive while offering behind-the-scenes insight. The show’s themes of friendship, ambition, and resilience continue to resonate with new audiences discovering it for the first time. One Tree Hill stands not just as a teen drama, but as a cultural legacy that shaped a generation and continues to inspire today.</p>
     </section>
 </body>
 <!-- Images with Citations -->
-<section>
+<section id="gallery" class="center">
   <h2>Image Gallery</h2>
   <figure>
     <img src="https://m.media-amazon.com/images/S/pv-target-images/8080274f1ac93cbff8f44e15c3483e8d0da4c1e644bd20bd5ef79bcca9371447.jpg" 
