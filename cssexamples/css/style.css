@@ -1,29 +1,37 @@
-/* Body */
 body {
   background-color: rgb(198, 219, 243);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  color: black;
 }
 
-/* Header */
-header {
+/* Banner */
+#banner {
   text-align: center;
   background-color: lightblue;
   padding: 15px;
 }
 
-/* Navigation (very simple) */
+#tagline {
+  margin: 0;
+  font-style: italic;
+}
+
+/* Nav (basic links with dividers) */
 nav {
   text-align: center;
   margin: 10px 0;
 }
+
 nav a {
-  margin: 0 8px;
-  text-decoration: none;
   color: blue;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* Sections */
@@ -31,13 +39,29 @@ section {
   max-width: 800px;
   margin: 15px auto;
   padding: 10px;
-  background: white;
+  background-color: white;
+  border: 1px solid #ccc;
 }
 
-/* Gallery images */
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Gallery */
+#gallery {
+  text-align: center;
+}
+
 #gallery img {
-  width: 250px;
   margin: 8px;
+  border: 1px solid #333;
 }
 
 /* Footer */
