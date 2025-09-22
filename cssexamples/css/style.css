@@ -6,16 +6,23 @@ body {
   line-height: 1.6;
 }
 
-/* Top banner */
+/* Big top banner */
 #top-banner {
-  text-align: center;
   background-color: lightblue;
-  padding: 20px;
-  border-bottom: 2px solid #111;
+  text-align: center;
+  padding: 25px;
+  border-bottom: 3px solid #111;
+}
+
+#top-banner h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 #tagline {
-  margin: 0;
+  margin: 5px 0 0 0;
   font-style: italic;
 }
 
@@ -72,3 +79,4 @@ footer {
   color: gray;
   margin: 20px 0;
 }
+\
